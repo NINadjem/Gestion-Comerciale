@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import com.jfoenix.controls.JFXTreeTableView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Accordion?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="parent" prefHeight="693.0" prefWidth="1376.0" style="-fx-background-color: #ffd6ff;" stylesheets="@CSS.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gstioncomercialenadjem.ReglementListFXMLController">
+   <children>
+      <AnchorPane layoutX="-1.0" layoutY="-2.0">
+         <children>
+            <AnchorPane prefHeight="126.0" prefWidth="1376.0" style="-fx-background-color: WHITE;">
+               <children>
+                  <HBox layoutY="71.0" prefHeight="67.0" prefWidth="1376.0" style="-fx-background-color: WHITE;">
+                     <children>
+                        <VBox fx:id="clientMenuItem" alignment="CENTER" onMouseClicked="#clientAndFourniManuBtnListener" onMouseEntered="#menuItemMouseEntereed" onMouseExited="#menuItemMouseExited" prefHeight="67.0" prefWidth="220.0" style="-fx-background-color: white;">
+                           <children>
+                              <ImageView fitHeight="50.0" fitWidth="61.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../image/icons8-people-64.png" />
+                                 </image>
+                              </ImageView>
+                              <Label prefHeight="17.0" prefWidth="41.0" text="Clients" textFill="#868ca1" />
+                           </children>
+                        </VBox>
+                        <VBox fx:id="fournisseurMenuItem" alignment="CENTER" layoutX="670.0" layoutY="10.0" onMouseClicked="#clientAndFourniManuBtnListener" onMouseEntered="#menuItemMouseEntereed" onMouseExited="#menuItemMouseExited" prefHeight="67.0" prefWidth="220.0" style="-fx-background-color: white;">
+                           <children>
+                              <ImageView fitHeight="50.0" fitWidth="61.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../image/icons8-camion-64.png" />
+                                 </image>
+                              </ImageView>
+                              <Label prefHeight="17.0" prefWidth="69.0" text="Fournisseurs" textFill="#868ca1" />
+                           </children>
+                        </VBox>
+                        <VBox fx:id="FactMenuItem" alignment="CENTER" onMouseClicked="#clientAndFourniManuBtnListener" onMouseEntered="#menuItemMouseEntereed" onMouseExited="#menuItemMouseExited" prefHeight="67.0" prefWidth="220.0" style="-fx-background-color: white;">
+                           <children>
+                              <ImageView fitHeight="50.0" fitWidth="61.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../image/icons8-ordre-d'achat-64.png" />
+                                 </image>
+                              </ImageView>
+                              <Label prefHeight="17.0" prefWidth="46.0" text="Factures" textFill="#868ca1" />
+                           </children>
+                        </VBox>
+                        <VBox fx:id="commandeMenuItem" alignment="CENTER" onMouseClicked="#clientAndFourniManuBtnListener" onMouseEntered="#menuItemMouseEntereed" onMouseExited="#menuItemMouseExited" prefHeight="67.0" prefWidth="220.0" style="-fx-background-color: white;">
+                           <children>
+                              <ImageView fitHeight="50.0" fitWidth="61.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../image/icons8-acheter-64.png" />
+                                 </image>
+                              </ImageView>
+                              <Label prefHeight="17.0" prefWidth="71.0" text="Commandes" textFill="#868ca1" />
+                           </children>
+                        </VBox>
+                        <VBox fx:id="produitAndStockMenuItem" alignment="CENTER" onMouseClicked="#clientAndFourniManuBtnListener" onMouseEntered="#menuItemMouseEntereed" onMouseExited="#menuItemMouseExited" prefHeight="67.0" prefWidth="220.0" style="-fx-background-color: white;">
+                           <children>
+                              <ImageView fitHeight="50.0" fitWidth="61.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../image/icons8-produit-64.png" />
+                                 </image>
+                              </ImageView>
+                              <Label prefHeight="17.0" prefWidth="88.0" text="Produit et Stock" textFill="#868ca1" />
+                           </children>
+                        </VBox>
+                        <VBox fx:id="societeMenuItem" alignment="CENTER" onMouseClicked="#clientAndFourniManuBtnListener" onMouseEntered="#menuItemMouseEntereed" onMouseExited="#menuItemMouseExited" prefHeight="67.0" prefWidth="220.0" style="-fx-background-color: white;">
+                           <children>
+                              <ImageView fitHeight="50.0" fitWidth="61.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../image/icons8-usine-64.png" />
+                                 </image>
+                              </ImageView>
+                              <Label prefHeight="17.0" prefWidth="43.0" text="Société " textFill="#868ca1" />
+                           </children>
+                        </VBox>
+                        <VBox fx:id="paramsMenuItem" alignment="CENTER" onMouseClicked="#clientAndFourniManuBtnListener" onMouseEntered="#menuItemMouseEntereed" onMouseExited="#menuItemMouseExited" prefHeight="67.0" prefWidth="220.0" style="-fx-background-color: white;">
+                           <children>
+                              <ImageView fitHeight="50.0" fitWidth="61.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../image/icons8-outils-administratifs-64.png" />
+                                 </image>
+                              </ImageView>
+                              <Label prefHeight="17.0" prefWidth="111.0" text="Outils Administratifs" textFill="#868ca1" />
+                           </children>
+                        </VBox>
+                     </children>
+                  </HBox>
+                  <ImageView fitHeight="68.0" fitWidth="55.0" layoutX="14.0" layoutY="9.0" pickOnBounds="true" preserveRatio="true" style="-fx-inner-color: white;">
+                     <image>
+                        <Image url="@../image/icons8-business-128.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="76.0" layoutY="15.0" prefHeight="43.0" prefWidth="168.0" text="Application MannoGEST" textFill="#868ca1">
+                     <font>
+                        <Font name="Candara Bold" size="16.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="43.0" fitWidth="39.0" layoutX="1304.0" layoutY="9.0" onMouseClicked="#userAvatarBtnEntered" onMouseEntered="#userAvatarBtnEntered" pickOnBounds="true" preserveRatio="true" style="-fx-inner-color: white;">
+                     <image>
+                        <Image url="@../image/icons8-utilisateur-64.png" />
+                     </image>
+                  </ImageView>
+                  <Label fx:id="username_label" layoutX="1046.0" layoutY="20.0" onMouseEntered="#userAvatarBtnExited" prefHeight="17.0" prefWidth="246.0" text="Salut Manno !" textFill="GREY" />
+               </children>
+            </AnchorPane>
+            <VBox fx:id="changePasswordOrLogOutPane" layoutX="1153.0" layoutY="49.0" onMouseExited="#userAvatarBtnExited" prefHeight="110.0" prefWidth="211.0" spacing="7.0" style="-fx-background-color: white;" visible="false">
+               <children>
+                  <AnchorPane onMouseClicked="#changePasswordBtnCliked" onMouseEntered="#changePasswordOrLogOutMouseEntereed" onMouseExited="#changePasswordOrLogOutMouseExited">
+                     <children>
+                        <ImageView fitHeight="34.0" fitWidth="39.0" layoutX="7.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../image/icons8-verrouiller-2-64.png" />
+                           </image>
+                        </ImageView>
+                        <Label layoutX="45.0" layoutY="19.0" prefHeight="17.0" prefWidth="134.0" text="Changer le mot de passe" textFill="#868ca1" />
+                     </children>
+                     <padding>
+                        <Insets left="10.0" top="10.0" />
+                     </padding>
+                  </AnchorPane>
+                  <AnchorPane layoutX="10.0" layoutY="10.0" onMouseClicked="#logOutBtnCliked" onMouseEntered="#changePasswordOrLogOutMouseEntereed" onMouseExited="#changePasswordOrLogOutMouseExited" prefHeight="22.0" prefWidth="197.0">
+                     <children>
+                        <ImageView fitHeight="28.0" fitWidth="27.0" layoutX="12.0" layoutY="9.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../image/icons8-déconnexion-filled-64.png" />
+                           </image>
+                        </ImageView>
+                        <Label layoutX="53.0" layoutY="18.0" prefHeight="17.0" prefWidth="127.0" text="Se Déconnecter" textFill="#868ca1" />
+                     </children>
+                     <padding>
+                        <Insets left="10.0" top="10.0" />
+                     </padding>
+                  </AnchorPane>
+               </children>
+            </VBox>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="-1.0" layoutY="169.0" prefHeight="540.0" prefWidth="1376.0" style="-fx-background-color: white;">
+         <children>
+            <HBox layoutX="799.0" layoutY="6.0" spacing="70.0" />
+            <VBox layoutX="37.0" layoutY="110.0" spacing="30.0" />
+            <HBox alignment="BOTTOM_LEFT" layoutX="736.0" layoutY="14.0" spacing="15.0">
+               <children>
+                  <ImageView fitHeight="59.0" fitWidth="67.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/icons8-argent-liquide-en-main-64.png" />
+                     </image>
+                  </ImageView>
+                  <Label fx:id="factNumLabel" text="Listes des Reglements" textFill="#868ca1">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <JFXTreeTableView fx:id="clientListTable" layoutX="398.0" layoutY="94.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="404.0" prefWidth="956.0" />
+            <VBox layoutX="416.0" layoutY="115.0" spacing="35.0">
+               <children>
+                  <HBox spacing="3.0" />
+               </children>
+            </VBox>
+            <VBox layoutX="27.0" layoutY="98.0" spacing="25.0" />
+            <HBox alignment="BOTTOM_LEFT" layoutX="435.0" layoutY="193.0" prefHeight="40.0" prefWidth="327.0" spacing="15.0" visible="false">
+               <children>
+                  <ImageView fitHeight="41.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true" style="-fx-inner-color: white;">
+                     <image>
+                        <Image url="@../image/icons8-récupéré-l'argent-64.png" />
+                     </image>
+                  </ImageView>
+                  <JFXTextField fx:id="remiseFieled" focusColor="#84adff" labelFloat="true" onKeyReleased="#realTyped" prefHeight="25.0" prefWidth="293.0" promptText="Remise" unFocusColor="#868ca1" />
+               </children>
+            </HBox>
+            <HBox layoutX="17.0" layoutY="442.0" spacing="30.0">
+               <children>
+                  <VBox alignment="CENTER" onMouseClicked="#addProBtnClicked" prefHeight="43.0" prefWidth="118.0" style="-fx-background-color: #ffff;">
+                     <children>
+                        <ImageView fitHeight="28.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true" style="-fx-inner-color: white;">
+                           <image>
+                              <Image url="@../image/icons8-chercher-64.png" />
+                           </image>
+                        </ImageView>
+                        <Label prefHeight="15.0" prefWidth="109.0" text="Chercher les reglements" textFill="#6897bb">
+                           <font>
+                              <Font size="10.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+                  <VBox alignment="CENTER" onMouseClicked="#erraceBtnClicked">
+                     <children>
+                        <ImageView fitHeight="38.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true" style="-fx-inner-color: white;">
+                           <image>
+                              <Image url="@../image/icons8-gomme-64.png" />
+                           </image>
+                        </ImageView>
+                        <Label text="Vider tout les champs" textFill="#6897bb">
+                           <font>
+                              <Font size="10.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+                  <VBox alignment="CENTER" onMouseClicked="#goToMenuBtnCliked">
+                     <children>
+                        <ImageView fitHeight="41.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true" style="-fx-inner-color: white;">
+                           <image>
+                              <Image url="@../image/icons8-home-128.png" />
+                           </image>
+                        </ImageView>
+                        <Label text="Revenir au Menu " textFill="#6897bb">
+                           <font>
+                              <Font size="10.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+            <JFXDatePicker fx:id="dateFieled" defaultColor="#ff7bff" editable="false" layoutX="35.0" layoutY="296.0" prefHeight="25.0" prefWidth="337.0" promptText="Date Fin" />
+            <JFXDatePicker fx:id="dateFieledDebut" defaultColor="#84adff" editable="false" layoutX="35.0" layoutY="193.0" prefHeight="25.0" prefWidth="337.0" promptText="Date  Debut" />
+            <Label layoutX="48.0" layoutY="97.0" text="Tapez ci-dessus pour Filtrer la Liste" textFill="#868ca1">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+         </children></AnchorPane>
+      <Accordion />
+   </children>
+</AnchorPane>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXSpinner?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="534.0" prefWidth="800.0" style="-fx-background-color: white;" stylesheets="@CSS.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gstioncomercialenadjem.loginFXMLController">
+<AnchorPane fx:id="parent_login" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="800.0" style="-fx-background-color: white;" styleClass="btn.in.dark" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ImageView fitHeight="125.0" fitWidth="118.0" layoutX="367.0" layoutY="33.0" pickOnBounds="true" preserveRatio="true" style="-fx-inner-color: white;" AnchorPane.leftAnchor="367.0" AnchorPane.rightAnchor="315.0">
+         <image>
+            <Image url="@../image/icons8-business-128.png" />
+         </image></ImageView>
+      <ImageView fitHeight="30.0" fitWidth="28.0" layoutX="282.0" layoutY="271.0" pickOnBounds="true" preserveRatio="true" />
+      <JFXTextField fx:id="login_nom_uti" focusColor="#f892d3" labelFloat="true" layoutX="266.0" layoutY="255.0" prefHeight="34.0" prefWidth="377.0" promptText="Nom d'utilisateur" style="-fx-prompt-text-fill: #868ca1;" unFocusColor="#868ca1">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <padding>
+            <Insets left="10.0" right="10.0" />
+         </padding>
+</JFXTextField>
+      <ImageView fitHeight="23.0" fitWidth="28.0" layoutX="214.0" layoutY="259.0" pickOnBounds="true" preserveRatio="true" styleClass="text_fieled_in_dark">
+         <image>
+            <Image url="@../image/icons8-utilisateur-64.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="23.0" fitWidth="28.0" layoutX="214.0" layoutY="339.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/icons8-verrouiller-2-64.png" />
+         </image>
+      </ImageView>
+      <JFXButton fx:id="login_btn" buttonType="RAISED" layoutX="476.0" layoutY="433.0" prefHeight="34.0" prefWidth="127.0" style="-fx-background-color: #42b0e4;" text="Connexion" textFill="WHITE">
+         <font>
+            <Font name="Candara Bold" size="14.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="frgot_password_button" buttonType="RAISED" layoutX="178.0" layoutY="430.0" prefHeight="37.0" prefWidth="188.0" text="Mot de Passe oublié?" textFill="#868ca1" underline="true">
+         <font>
+            <Font name="Candara" size="16.0" />
+         </font>
+
+      </JFXButton>
+      <Label layoutX="214.0" layoutY="166.0" prefHeight="43.0" prefWidth="425.0" text="Se connecter à MannoGEST" textFill="#f892d3">
+         <font>
+            <Font name="Candara Bold" size="36.0" />
+         </font>
+      </Label>
+      <Label fx:id="login_error_report" layoutX="8.0" layoutY="395.0" prefHeight="20.0" prefWidth="785.0" text=" " textFill="#ec716f">
+         <font>
+            <Font name="Candara Bold" size="16.0" />
+         </font>
+      </Label>
+      <JFXSpinner fx:id="prograss_bar" layoutX="396.0" layoutY="368.0" prefHeight="37.0" prefWidth="28.0" visible="false" />
+         <JFXPasswordField fx:id="login_password" focusColor="#f892d3" labelFloat="true" layoutX="266.0" layoutY="336.0" prefHeight="30.0" prefWidth="377.0" promptText="Mot de passe" style="-fx-prompt-text-fill: #868ca1;" unFocusColor="#868ca1">
+            <font>
+               <Font size="14.0" />
+            </font>
+            <padding>
+               <Insets left="10.0" right="10.0" />
+            </padding>
+         </JFXPasswordField>
+   </children>
+</AnchorPane>
+</AnchorPane>
